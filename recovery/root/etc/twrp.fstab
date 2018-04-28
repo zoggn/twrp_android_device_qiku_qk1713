@@ -1,0 +1,15 @@
+/boot           emmc            /dev/block/bootdevice/by-name/boot          flags=slotselect
+/system         ext4            /dev/block/bootdevice/by-name/system        flags=slotselect
+/system_image   emmc            /dev/block/bootdevice/by-name/system        flags=slotselect
+/oem            ext4            /dev/block/bootdevice/by-name/oem           flags=slotselect;display="OEM";backup=1
+/oem_image      emmc            /dev/block/bootdevice/by-name/oem           flags=slotselect
+/data           ext4            /dev/block/bootdevice/by-name/userdata		
+/misc           emmc            /dev/block/bootdevice/by-name/misc
+/external_sd    vfat	    	/dev/block/mmcblk1p1               			flags=display="Micro SD";storage;removable
+/keymaster 		emmc 			/dev/block/bootdevice/by-name/keymaster		flags=slotselect
+/firmware       ext4            /dev/block/bootdevice/by-name/modem         flags=slotselect
+/bt_firmware    ext4		    /dev/block/bootdevice/by-name/bluetooth     flags=slotselect
+/dsp            ext4            /dev/block/bootdevice/by-name/dsp			flags=slotselect
+/persist        ext4            /dev/block/bootdevice/by-name/persist  		flags=slotselect
+/fsg            ext4            /dev/block/bootdevice/by-name/fsg           flags=slotselect
+/usb-otg 		auto 			/dev/block/sda1 /dev/block/sda 				flags=display="USB OTG";storage;wipeingui;removable
